@@ -1,0 +1,53 @@
+# Only the website is tracked. Everything else in this folder stays local.
+/*
+!/.gitignore
+!/index.html
+!/case-studies.html
+!/founder-stories.html
+!/launch-videos.html
+!/podcasting.html
+!/assets/
+
+# Asset files the site does not use (sources, old versions)
+/assets/.DS_Store
+/assets/Black\ Blueprint.png
+/assets/Case\ Study\ (JHS).pdf
+/assets/Charles\ Coad.jpg
+/assets/James\ Hempton.jpg
+/assets/Matt\ Conway.jpg
+/assets/ORGN\ (Intro).mov
+/assets/Podcast\ Photo.png
+/assets/Space\ Photo.JPG
+/assets/Waqas\ Majeed.jpg
+/assets/a16z.jpg
+/assets/antler.png
+/assets/card-altman.jpg
+/assets/card-altman.mp4
+/assets/card-jensen.jpg
+/assets/card-jensen.mp4
+/assets/card-neumann.jpg
+/assets/card-neumann.mp4
+/assets/carousel-cover.jpg
+/assets/client-james-hempton.png
+/assets/favicon.png
+/assets/gear-1.png
+/assets/gear-2.png
+/assets/globe.jpg
+/assets/jhs/before-3.jpg
+/assets/orgn-chrome.png
+/assets/orgn-intro-4k.mp4
+/assets/orgn-intro.mp4
+/assets/orgn-logo.png
+/assets/orgn-mark.png
+/assets/proof/r21k.jpg
+/assets/proof/r34k-b.jpg
+/assets/proof/r34k.jpg
+/assets/rocket-bg.jpg
+/assets/rocket-bg.mp4
+/assets/space-bg-wide.jpg
+/assets/space-bg.jpg
+/assets/speedrun.jpg
+/assets/svc/pod-main.jpg
+/assets/svc/pod-main.mp4
+/assets/yc.jpg
+.DS_Store
