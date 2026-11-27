@@ -12,7 +12,11 @@
 !/sitemap.xml
 
 # Asset files the site does not use (sources, old versions)
-/assets/.DS_Store
+/assets//assets/svc/fs-2.mp4
+/assets/svc/fs-2.jpg
+/assets/svc/fs-4.mp4
+/assets/svc/fs-4.jpg
+.DS_Store
 /assets/Black\ Blueprint.png
 /assets/Case\ Study\ (JHS).pdf
 /assets/Charles\ Coad.jpg
