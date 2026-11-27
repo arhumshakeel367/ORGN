@@ -1,0 +1,27 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "orgn.media"
+        }
+      ],
+      "destination": "https://www.orgnmedia.co/",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.orgn.media"
+        }
+      ],
+      "destination": "https://www.orgnmedia.co/",
+      "permanent": false
+    }
+  ]
+}

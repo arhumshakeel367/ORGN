@@ -8,6 +8,7 @@
 !/podcasting.html
 !/assets/
 !/robots.txt
+!/vercel.json
 !/sitemap.xml
 
 # Asset files the site does not use (sources, old versions)
