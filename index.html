@@ -810,6 +810,7 @@ footer nav a:active{transform:none}
     };
     const loop=now=>{
       raf=0; if(!vis)return;
+      if(last&&now-last<30){raf=requestAnimationFrame(loop);return}
       const dt=last?Math.min(64,now-last)/1000:1/60; last=now;
       for(let i=0;i<heat.length;i++) if(heat[i]>0){heat[i]-=rate[i]*dt; if(heat[i]<0)heat[i]=0}
       // with no pointer around (phones, idle screens) a slow light roams the page by itself
