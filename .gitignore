@@ -7,6 +7,8 @@
 !/launch-videos.html
 !/podcasting.html
 !/assets/
+!/robots.txt
+!/sitemap.xml
 
 # Asset files the site does not use (sources, old versions)
 /assets/.DS_Store
