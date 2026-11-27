@@ -51,3 +51,5 @@
 /assets/svc/pod-main.mp4
 /assets/yc.jpg
 .DS_Store
+.vercel
+.env*
