@@ -749,5 +749,29 @@ footer nav a:active{transform:none}
   }));
 })();
 </script>
+<script>
+// in-page links scroll without leaving #section in the address bar
+(()=>{
+  const calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const go=(id,smooth)=>{
+    const b=smooth&&!calm?'smooth':'auto';
+    if(!id||id==='top'){scrollTo({top:0,behavior:b});return true}
+    const el=document.getElementById(id); if(!el)return false;
+    el.scrollIntoView({behavior:b,block:'start'}); return true;
+  };
+  document.addEventListener('click',e=>{
+    if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+    const a=e.target.closest&&e.target.closest('a[href]'); if(!a||a.target==='_blank')return;
+    let u; try{u=new URL(a.href)}catch(_){return}
+    if(u.origin!==location.origin||u.pathname!==location.pathname||!a.getAttribute('href').includes('#'))return;
+    if(go(decodeURIComponent(u.hash.slice(1)),true))e.preventDefault();
+  });
+  const clean=()=>{if(location.hash)history.replaceState(null,'',location.pathname+location.search)};
+  if(location.hash){
+    const id=decodeURIComponent(location.hash.slice(1));
+    addEventListener('load',()=>setTimeout(()=>{go(id,false);clean()},60));
+  }
+})();
+</script>
 </body>
 </html>
