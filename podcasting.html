@@ -492,7 +492,7 @@ footer nav a:active{transform:none}
       <div class="cols">
         <div>
           <a class="brand" href="/" aria-label="ORGN home"><img src="assets/orgn-white.png" alt="ORGN"></a>
-          <p class="blurb">Media partners for tech and VCs.<br><a href="mailto:hello@orgnmedia.co">hello@orgnmedia.co</a></p>
+          <p class="blurb">Media partners for tech and VCs.<br><a href="mailto:arhum@orgnmedia.co">arhum@orgnmedia.co</a></p>
         </div>
         <nav aria-label="Footer">
           <div><h4>Services</h4><a href="founder-stories.html">Founder stories</a><a href="podcasting.html">Podcasting</a><a href="launch-videos.html">Launch videos</a></div>
@@ -592,7 +592,7 @@ footer nav a:active{transform:none}
       for(let gy=0;gy<rows;gy++){
         let gx=0;
         while(gx<cols){
-          if(rand()<.03){const len=4+Math.floor(rand()*14), a=.1+rand()*.12; for(let k=0;k<len&&gx<cols;k++,gx++)amb[gy*cols+gx]=a}
+          if(rand()<.04){const len=4+Math.floor(rand()*14), a=.17+rand()*.16; for(let k=0;k<len&&gx<cols;k++,gx++)amb[gy*cols+gx]=a}
           else gx++;
         }
       }
@@ -604,7 +604,7 @@ footer nav a:active{transform:none}
         for(let gx=0;gx<cols;gx++){
           const i=gy*cols+gx, ch=chars[i]; if(ch===' ')continue;
           const lum=Math.max(amb[i],heat[i]); if(lum<=.03)continue;
-          ctx.globalAlpha=Math.min(.78,lum*.8); ctx.fillText(ch,gx*CW,y);
+          ctx.globalAlpha=Math.min(.92,lum*.98); ctx.fillText(ch,gx*CW,y);
         }
       }
       ctx.globalAlpha=1;
@@ -637,7 +637,7 @@ footer nav a:active{transform:none}
         const tx=W*(.5+.36*Math.sin(now*.00017)), ty=H*(.5+.32*Math.sin(now*.00023+1.3));
         if(!auto.init){auto.x=tx;auto.y=ty;auto.init=true}
         auto.x+=(tx-auto.x)*.04; auto.y+=(ty-auto.y)*.04;
-        stamp(auto.x,auto.y,Math.min(190,W*.34),.5,.8);
+        stamp(auto.x,auto.y,Math.min(220,W*.44),.45,.95);
       } else auto.init=false;
       draw(); raf=requestAnimationFrame(loop);
     };
